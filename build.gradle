@@ -1,0 +1,32 @@
+
+
+buildscript {
+    repositories {
+        // Make sure that you have the following two repositories
+        google()
+        // Maven Central repository
+
+    }
+
+
+    dependencies {
+
+        // Add the dependency for the Google services Gradle plugin
+
+        classpath 'com.google.gms:google-services:4.3.15'
+        classpath 'org.jetbrains.kotlin:kotlin-ksp:1.4.0-rc-dev-experimental-20200828'
+        classpath "com.android.tools.build:gradle:7.0.4"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0"
+
+
+    }
+}
+
+plugins {
+    id 'com.android.application' version '7.4.2' apply false
+    id 'com.android.library' version '7.4.2' apply false
+    id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
+
+}
+
+
